@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "outDir": "./dst/js",
+        "rootDir": "./src/ts",
+        "sourceMap": true
+    },
+    "include": [  // コンパイルする対象ファイルを指定(ワイルドカード使用可)
+        "./src/ts/foo.ts",
+        "./src/ts/bar.ts"
+    ],
+    "exclude": [  // コンパイルしないファイルを指定
+        "node_modules"
+    ]
+}
